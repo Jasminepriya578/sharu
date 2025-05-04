@@ -621,7 +621,6 @@ export default function Timetable() {
                     {getAvailableStandards(timetableData).map((standard) => (
                       <button
                         key={standard}
-                        key={standard}
                         onClick={() => handleStandardChange(standard)}
                         className={`px-4 py-2 rounded-lg transition-all transform hover:scale-105 ${
                           selectedStandard === standard 
