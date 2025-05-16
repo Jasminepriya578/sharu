@@ -1,0 +1,37 @@
+/src
+ ├── /modules
+ │    ├── /admin
+ │    │    ├── /components     // UI components specific to Admin
+ │    │    ├── /pages          // Admin-specific pages (e.g., /admin/dashboard)
+ │    │    └── /api            // API routes for Admin functions
+ │    ├── /staff
+ │    │    ├── /components
+ │    │    ├── /pages          // e.g., /staff/schedule, /staff/reports
+ │    │    └── /api
+ │    ├── /student
+ │    │    ├── /components
+ │    │    ├── /pages          // e.g., /student/profile, /student/courses
+ │    │    └── /api
+ │    ├── /teacher
+ │    │    ├── /components
+ │    │    ├── /pages          // e.g., /teacher/classes, /teacher/assignments
+ │    │    └── /api
+ │    └── /parent
+ │         ├── /components
+ │         ├── /pages          // e.g., /parent/overview, /parent/reports
+ │         └── /api
+ ├── /shared
+ │    ├── /components         // Common UI elements (buttons, modals, etc.)
+ │    ├── /styles             // Global styles and theme files (e.g., global.css)
+ │    └── /utils              // Helper functions, hooks, and constants
+ ├── /config
+ │    └── index.js           // Global configuration (routing, environment settings)
+ ├── /lib
+ │    └── db.js              // Database connection (using ORM like Prisma, Sequelize, etc.)
+ ├── /pages                  // Public pages and API endpoints
+ │    ├── _app.tsx           // Global wrapper where you import global.css & layout
+ │    ├── index.tsx          // Default landing page (public school website)
+ │    ├── login.tsx          // Login page (redirects to ERP modules based on role)
+ │    └── /api
+ │         └── auth.js       // Shared authentication API route
+ └── /public                 // Static assets (images, fonts, favicon.ico, etc.)
