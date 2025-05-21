@@ -13,8 +13,8 @@ import Result from "@/app/master/components/Results";
 import Timetable from '@/app/master/components/timetable/timetable';
 import Halltickets from '@/app/master/components/Examination/HallTickets/Hallticket';
 import Examtimetable from '@/app/master/components/Examination/ExamTimetable';
-import Questionpaper from '@/app/master/components/Examination/Questionpaper';
-import Roomallocation from '@/app/master/components/Examination/Roomallocation';
+import Questiongenerator from '@/app/master/components/Examination/QuestionGenerator';
+import Transport from "@/app/master/components/Transport/index";
 
 export default function Home() {
   const [activeComponent, setActiveComponent] = useState("Home");
@@ -42,14 +42,12 @@ export default function Home() {
             return <FeesDetails />;
             case "Time Table":
             return <Timetable/>;
-         
+            case "Transport Management":
+              return <Transport/>
               case "ExamTimetable":
             return < Examtimetable />;
-
-               case "Roomallocation":
-            return <Roomallocation/>;
-              case "Questionpaper":
-            return < Questionpaper />;
+              case "QuestionGenerator":
+            return < Questiongenerator />;
      
       case "Home":
         return (

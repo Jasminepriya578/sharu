@@ -169,11 +169,7 @@ const Navbar: React.FC<NavbarProps> = ({ setActiveComponent }) => {
           icon: <ClipboardCheck size={20} />,
           label: "Examination",
           dropdown:[
-               {  
-              icon: <UserCheck size={20} />,
-              label: " Venue and Roomallocation ",
-              action: () => setActiveComponent("Roomallocation"),
-            },
+           
                {  
               icon: <UserCheck size={20} />,
               label: "Exam Timetable",
@@ -189,17 +185,14 @@ const Navbar: React.FC<NavbarProps> = ({ setActiveComponent }) => {
             },*/
                {  
               icon: <UserCheck size={20} />,
-              label: "QuestionPaper Generation",
-              action: () => setActiveComponent("Questionpaper"),
+              label: "QuestionGenerator",
+              action: () => setActiveComponent("QuestionGenerator"),
             }
          
           ]
         },
       ],
     },
-
-
-
 
 
     {
